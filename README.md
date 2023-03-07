@@ -1,6 +1,6 @@
 # Encoded-bnb_chain
 
-High level Architeture Design of a descentralised monopoly game with no central server and the fix to the problems which includes 
+High level System Architeture of a descentralised monopoly game with no central server and the fix to common problems which includes 
 
 1. Cheating
 2. Ensuring agreement about the state of the system
