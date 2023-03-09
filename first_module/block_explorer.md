@@ -1,6 +1,7 @@
 # Block Explorer
 
 We ll use the main net block explorer to find
+<img width="1432" alt="Screenshot 2023-03-09 at 4 44 24 AM" src="https://user-images.githubusercontent.com/36278808/223918193-26bd8b51-9709-4757-9367-641e37f7f9e8.png">
 
 1. How many users are holding the pancake swap token 'cake' ?
 2. Approximately, how many unique addresses are there ?
