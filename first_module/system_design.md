@@ -8,7 +8,7 @@ High level System Architeture of a decentralised monopoly game with no central s
 4. How to decide who should take the next turn
 5. How to allow the correct people to join the game
 
-# Solutions
+# Explanation
 
 1. Without a central server, players would need to use a peer-to-peer network to communicate and agree on the state of the game. To prevent cheating, the game could be designed to use cryptographic techniques such as digital signatures to ensure that only authorized players can make moves or transactions.
 
