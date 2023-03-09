@@ -13,7 +13,7 @@ We ll use the main net block explorer to find
 
 NB: All these are findings are done realtime on the blockchain explorer and are subject to change and can be checked on the blockchain explorer at any time.
 
-# Solution
+# Explanation
 
 To find out how many users are holding the PancakeSwap token using the main net blockchain explorer, We' ll Go to the PancakeSwap website and find the contract address of the PancakeSwap token. The contract address is [`0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82`](https://bscscan.com/address/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82)
 
