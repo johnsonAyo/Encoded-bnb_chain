@@ -30,6 +30,15 @@ pragma solidity 0.8.18;
 
 contract Dogcoin {
     uint256 totalSupply = 2000000;
+    address owner;
+
+    modifier onlyOwner() {
+        require(
+            owner == msg.sender,
+            "You do not have permission to execute this Action"
+        );
+        _;
+    }
 
     function getTotalSupply() public returns (uint256) {
         return totalSupply;
