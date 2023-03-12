@@ -29,5 +29,9 @@
 pragma solidity 0.8.18;
 
 contract Dogcoin {
-    uint256 totalSupply = 2000000
+    uint256 totalSupply = 2000000;
+
+    function getTotalSupply() public returns (uint256) {
+        return totalSupply;
+    }
 }
