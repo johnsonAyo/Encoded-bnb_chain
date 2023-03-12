@@ -50,6 +50,11 @@ contract Dogcoin {
 
     mapping(address => uint256) balances;
 
+    struct Payment {
+        uint256 amount;
+        address recipient;
+    }
+
     function setBalance(address user, uint256 balance) public onlyOwner {
         balances[user] = balance;
     }
