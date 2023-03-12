@@ -32,7 +32,7 @@ contract Dogcoin {
     uint256 totalSupply;
     address owner;
     event totalSupplyNotify(uint256);
-    event transferNotify(address, address, uint256);
+    event transferNotify(uint256 amount, address recipient);
 
     constructor() {
         totalSupply = 2000000;
@@ -62,7 +62,7 @@ contract Dogcoin {
         require(balances[msg.sender] >= amount, "Insufficient Balance");
         balances[msg.sender] -= amount;
         balances[recipient] += amount;
-        emit transferNotify(msg.sender, recipient, amount);
+        emit transferNotify(amount, recipient);
     }
 
     function getTotalSupply() public returns (uint256) {
