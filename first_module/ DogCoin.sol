@@ -55,6 +55,17 @@ contract Dogcoin {
         address recipient;
     }
 
+    mapping(address => Payment[]) payments;
+
+    function addPayment(
+        address user,
+        uint256 amount,
+        address recipient
+    ) {
+        Payment memory newPayment = Payment(amount, recipient);
+        payments[user].push(newPayment);
+    }
+
     function setBalance(address user, uint256 balance) public onlyOwner {
         balances[user] = balance;
     }
