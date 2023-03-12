@@ -32,6 +32,11 @@ contract Dogcoin {
     uint256 totalSupply = 2000000;
     address owner;
 
+
+    constructor() {
+        owner = msg.sender
+    }
+
     modifier onlyOwner() {
         require(
             owner == msg.sender,
@@ -44,7 +49,7 @@ contract Dogcoin {
         return totalSupply;
     }
 
-    function increaseTs() public {
+    function increaseTs() public onlyOwner {
         totalSupply = totalSupply + 1000;
     }
 }
