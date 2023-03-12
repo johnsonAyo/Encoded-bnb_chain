@@ -45,6 +45,16 @@ contract Dogcoin {
         _;
     }
 
+    mapping(address => uint256) balances;
+
+    function setBalance(address user, uint256 balance) public {
+        balances[user] = balance;
+    }
+
+    function getBalance(address user) public returns (uint256) {
+        return balances[user];
+    }
+
     function getTotalSupply() public returns (uint256) {
         return totalSupply;
     }
