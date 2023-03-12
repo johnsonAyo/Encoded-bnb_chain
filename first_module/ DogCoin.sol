@@ -29,12 +29,14 @@
 pragma solidity 0.8.18;
 
 contract Dogcoin {
-    uint256 totalSupply = 2000000;
+    uint256 totalSupply;
     address owner;
     event totalSupplyNotify(uint256);
 
     constructor() {
+        totalSupply = 2000000;
         owner = msg.sender;
+        balances[owner] = totalSupply;
     }
 
     modifier onlyOwner() {
@@ -47,7 +49,7 @@ contract Dogcoin {
 
     mapping(address => uint256) balances;
 
-    function setBalance(address user, uint256 balance) public {
+    function setBalance(address user, uint256 balance) public onlyOwner {
         balances[user] = balance;
     }
 
