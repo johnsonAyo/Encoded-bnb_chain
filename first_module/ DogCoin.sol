@@ -31,10 +31,10 @@ pragma solidity 0.8.18;
 contract Dogcoin {
     uint256 totalSupply = 2000000;
     address owner;
-
+    event totalSupplyNotify(uint256);
 
     constructor() {
-        owner = msg.sender
+        owner = msg.sender;
     }
 
     modifier onlyOwner() {
@@ -51,5 +51,6 @@ contract Dogcoin {
 
     function increaseTs() public onlyOwner {
         totalSupply = totalSupply + 1000;
+        emit totalSupplyNotify(totalSupply);
     }
 }
