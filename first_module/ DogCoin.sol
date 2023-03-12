@@ -34,4 +34,8 @@ contract Dogcoin {
     function getTotalSupply() public returns (uint256) {
         return totalSupply;
     }
+
+    function increaseTs() public {
+        totalSupply = totalSupply + 1000;
+    }
 }
