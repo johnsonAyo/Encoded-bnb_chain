@@ -28,4 +28,6 @@
 
 pragma solidity 0.8.18;
 
-contract Dogcoin {}
+contract Dogcoin {
+    uint256 totalSupply = 2000000
+}
