@@ -78,6 +78,7 @@ contract Dogcoin {
         require(balances[msg.sender] >= amount, "Insufficient Balance");
         balances[msg.sender] -= amount;
         balances[recipient] += amount;
+        addPayment(msg.sender, amount, recipient);
         emit transferNotify(amount, recipient);
     }
 
