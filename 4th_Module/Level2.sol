@@ -9,7 +9,6 @@ interface Isolution2 {
 contract Solution2 {
     function solution(uint256[10] calldata unsortedArray)
         external
-        pure
         returns (uint256[10] memory sortedArray)
     {
         // Copy the input array to a new array
